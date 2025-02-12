@@ -3,7 +3,6 @@ import javax.persistence.Id;
 
 @Entity
 public class Book {
-
     @Id
     private int id;
     private String title;
@@ -33,5 +32,21 @@ public class Book {
 
     public boolean isAvailable() {
         return isAvailable;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public void setAvailable(boolean isAvailable) {
+        this.isAvailable = isAvailable;
     }
 }
